@@ -53,6 +53,17 @@ public class LinkedQueue {
 		return count;
 	}
 
+	public String toString() {
+		String str = "";
+
+		LinkedNode cur = front;
+		while (cur != null) {
+			str += cur.x + " ";
+			cur = cur.next;
+		}
+		return str;
+	}
+
 	public void removeMiddle() {
 
 		int value = 0;
@@ -70,5 +81,4 @@ public class LinkedQueue {
 
 		System.out.println(toString());
 	}
-
 }
