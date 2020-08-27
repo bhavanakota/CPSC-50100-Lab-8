@@ -63,8 +63,7 @@ public class Driver {
 		linkedQ2.enqueue(9);
 		linkedQ2.enqueue(2);
 
-
+		System.out.println("Removed middle element: " );
 		linkedQ2.removeMiddle();
-		System.out.println("Removed middle element: " + linkedQ2);
 	}
 }
