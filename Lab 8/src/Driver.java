@@ -11,7 +11,6 @@ public class Driver {
 	public static void main(String[] args) {
 
 		// Creating the ArrayQueue and LinkedQueue
-
 		ArrayQ arrayQ = new ArrayQ();
 		LinkedQueue linkedQ = new LinkedQueue();
 
@@ -44,17 +43,15 @@ public class Driver {
 		System.out.print("\n");
 
 		/*
-		 * Exercise 2 
-		 * Modify the LinkedQueue class to include a new method called
+		 * Exercise 2 Modify the LinkedQueue class to include a new method called
 		 * removeMiddle, which removes from the queue the value that is in the middle.
 		 * For example, if the queue contains 3, 7, 2, 4, 5, then 2 will be removed. If
 		 * the queue contains 2, 9, 1, 4 (even number of values), then remove 9 (round
 		 * down). Test the method using the Driver program.
 		 */
-		
-		// Creating a new LinkedQueue for exercise 2 
+
+		// Creating a new LinkedQueue for exercise 2
 		LinkedQueue linkedQ2 = new LinkedQueue();
-		
 
 		linkedQ2.enqueue(1);
 		linkedQ2.enqueue(7);
@@ -63,7 +60,18 @@ public class Driver {
 		linkedQ2.enqueue(9);
 		linkedQ2.enqueue(2);
 
-		System.out.println("Removed middle element: " );
+		// Printing out without the middle element
+		System.out.println("Removed middle element: ");
 		linkedQ2.removeMiddle();
+
+		/* Exercise 3
+		 * 
+		 * Use the tree diagram below to answer the questions below.
+		 * a) What is the root node of the tree: 50
+		 * b) What are the leaf nodes  of the tree: 9, 14, 19, 67,  76, 
+		 * c) What are the ancestor nodes of the node containing 19? 23, 17, 50
+		 * d) Write the sequence that you would get from a post order traversal?
+		 *    9, 14,12, 19, 23,  17, 67, 54, 76, 72, 50
+		 */
 	}
 }
